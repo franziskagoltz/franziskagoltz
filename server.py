@@ -21,4 +21,15 @@ app.jinja_env.auto_reload = True
 def index():
     """Shows landing page"""
 
-    pass
+    return render_template("homepage.html")
+
+
+if __name__ == "__main__":
+    # We have to set debug=True here, since it has to be True at the
+    # point that we invoke the DebugToolbarExtension
+    # app.debug = False
+
+    # Use the DebugToolbar
+    # DebugToolbarExtension(app)
+
+    app.run()
