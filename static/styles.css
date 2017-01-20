@@ -1,9 +1,14 @@
 /*css for franziskagoltz*/
 
 body {
-    background-color: #5C7070;
+    background-color: #5C7075;
+    color: #0A1B1B;
 }
 
 .navbar {
     opacity: 0.6;
+}
+
+.nav a {
+    color: #0A1B1B;
 }
