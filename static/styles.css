@@ -3,3 +3,7 @@
 body {
     background-color: #5C7070;
 }
+
+.navbar {
+    opacity: 0.6;
+}
