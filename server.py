@@ -1,7 +1,8 @@
 """Personal Website"""
 
+import os
 
-from flask import Flask, render_template, redirect, request, flash, session
+from flask import Flask, render_template
 from jinja2 import StrictUndefined
 
 
@@ -32,4 +33,6 @@ if __name__ == "__main__":
     # Use the DebugToolbar
     # DebugToolbarExtension(app)
 
-    app.run()
+    PORT = int(os.environ.get("PORT", 5000))
+
+    app.run(host="0.0.0.0", port=PORT)
